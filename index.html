@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Política de Privacidade - Comandex</title>
+  <title>Comandex</title>
 
   <style>
     body {
@@ -22,27 +22,22 @@
 
     .card {
       background: #1f2937;
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255,255,255,.08);
       border-radius: 20px;
       padding: 40px;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+      box-shadow: 0 20px 60px rgba(0,0,0,.35);
     }
 
     h1 {
       margin-top: 0;
-      font-size: 2rem;
+      font-size: 2.5rem;
       color: #ffffff;
     }
 
-    h2 {
-      margin-top: 32px;
-      color: #fb923c;
-      font-size: 1.2rem;
-    }
-
-    p {
+    .subtitle {
       color: #d1d5db;
-      font-size: 1rem;
+      font-size: 1.1rem;
+      margin-bottom: 32px;
     }
 
     .brand {
@@ -50,19 +45,37 @@
       font-weight: bold;
     }
 
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .link-card {
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: 12px;
+      padding: 16px;
+      text-decoration: none;
+      color: #f9fafb;
+      transition: .2s;
+    }
+
+    .link-card:hover {
+      border-color: #fb923c;
+      transform: translateY(-1px);
+    }
+
+    .link-title {
+      color: #fb923c;
+      font-weight: bold;
+    }
+
     .footer {
       margin-top: 32px;
-      font-size: 0.9rem;
       color: #9ca3af;
-    }
-
-    a {
-      color: #fb923c;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
+      font-size: .9rem;
     }
 
     @media (max-width: 600px) {
@@ -71,7 +84,7 @@
       }
 
       h1 {
-        font-size: 1.6rem;
+        font-size: 2rem;
       }
     }
   </style>
@@ -80,59 +93,41 @@
 <body>
   <main class="container">
     <section class="card">
-      <h1>Política de Privacidade</h1>
+
+      <h1>Comandex</h1>
+
+      <p class="subtitle">
+        Sistema de gestão para restaurantes, bares e lanchonetes.
+      </p>
 
       <p>
-        Esta Política de Privacidade descreve como o <span class="brand">Comandex</span>
-        coleta, utiliza e protege as informações fornecidas pelos usuários da aplicação.
+        O <span class="brand">Comandex</span> ajuda estabelecimentos a gerenciar
+        produtos, mesas, pedidos, pagamentos, relatórios e operações do dia a dia.
       </p>
 
-      <h2>1. Sobre o Comandex</h2>
-      <p>
-        O Comandex é um sistema de gestão para restaurantes, lanchonetes e estabelecimentos
-        similares, auxiliando no controle de produtos, pedidos, mesas, pagamentos e relatórios.
-      </p>
+      <div class="links">
 
-      <h2>2. Informações coletadas</h2>
-      <p>
-        Coletamos informações necessárias para autenticação e funcionamento da plataforma,
-        como e-mail, dados da empresa, produtos cadastrados, pedidos, mesas e usuários autorizados.
-      </p>
+        <a class="link-card" href="privacy.html">
+          <div class="link-title">Política de Privacidade</div>
+          <div>Saiba como os dados são tratados.</div>
+        </a>
 
-      <h2>3. Uso das informações</h2>
-      <p>
-        Os dados são utilizados exclusivamente para operação do sistema, autenticação dos usuários,
-        organização dos pedidos e exibição das informações necessárias dentro da aplicação.
-      </p>
+        <a class="link-card" href="terms.html">
+          <div class="link-title">Termos de Uso</div>
+          <div>Condições de utilização da plataforma.</div>
+        </a>
 
-      <h2>4. Compartilhamento de dados</h2>
-      <p>
-        Não comercializamos dados pessoais com terceiros. As informações são utilizadas apenas
-        para viabilizar o funcionamento do Comandex.
-      </p>
+        <a class="link-card" href="delete-account.html">
+          <div class="link-title">Exclusão de Conta</div>
+          <div>Solicite a remoção dos seus dados.</div>
+        </a>
 
-      <h2>5. Armazenamento e segurança</h2>
-      <p>
-        Os dados são armazenados em infraestrutura utilizada pela aplicação, com medidas razoáveis
-        de segurança para proteger as informações contra acessos não autorizados.
-      </p>
+      </div>
 
-      <h2>6. Solicitação de remoção de dados</h2>
-      <p>
-        O usuário pode solicitar informações, correções ou exclusão de dados entrando em contato
-        pelo e-mail:
-        <a href="mailto:josivaldo.fb@gmail.com">josivaldo.fb@gmail.com</a>.
-      </p>
+      <div class="footer">
+        © 2026 Comandex
+      </div>
 
-      <h2>7. Alterações nesta política</h2>
-      <p>
-        Esta política pode ser atualizada periodicamente para refletir melhorias no aplicativo
-        ou mudanças legais e operacionais.
-      </p>
-
-      <p class="footer">
-        Última atualização: Maio de 2026.
-      </p>
     </section>
   </main>
 </body>
